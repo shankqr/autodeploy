@@ -48,6 +48,8 @@ GitHub.prototype.post = function (req, res) {
   //res.send('POST request to gitHub.js/myExec')
   myExec(configGit.action.exec.github)
 
+  res.send('POST request to gitHub.js/myExec')
+  
   res.writeHead(200)
   res.end()
 }
@@ -64,9 +66,6 @@ var inAuthorizedSubnet = function (ip) {
 
 //Now execute the .sh file
 var myExec = function (line) {
-
-  res.send('POST request to gitHub.js/myExec')
-  
   var exec = require('child_process').exec
   var execCallback = function (error) {
     if (error !== null) {
