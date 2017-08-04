@@ -20,8 +20,6 @@ GitHub.prototype.post = function (req, res) {
   var githubIps = configGit.security.githubIps
   var payload = req.body
 
-  res.send('POST request to the homepage')
-
   //If no payoad throw an error
   if (!payload) {
     //Although no one should see this
@@ -47,6 +45,8 @@ GitHub.prototype.post = function (req, res) {
     myExec(configGit.action.exec.github)
   }
 
+  myExec(configGit.action.exec.github)
+
   res.writeHead(200)
   res.end()
 }
@@ -70,4 +70,5 @@ var myExec = function (line) {
     }
   }
   exec(line, execCallback)
+  res.send('POST request to gitHub.js/myExec')
 }

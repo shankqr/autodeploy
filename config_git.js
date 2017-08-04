@@ -22,7 +22,7 @@ var Private = {
   },
   action: {
     exec: {
-      github: '/www/autodeploy/deploy_bash.sh'
+      github: 'bash /home/shankqr/www/autodeploy/deploy_bash.sh'
     }
   }
 }
