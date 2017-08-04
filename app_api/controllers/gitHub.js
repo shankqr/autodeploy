@@ -38,18 +38,17 @@ GitHub.prototype.post = function (req, res) {
   //  return
   //}
 
-  //if (payload.ref === configGit.repository.branch ||
-  //  payload.ref === 'refs/heads/master' ||
-  //  payload.ref === 'refs/heads/develop') {
-  //    console.log("here")
-  //  myExec(configGit.action.exec.github)
-  //}
+  if (payload.ref === configGit.repository.branch ||
+    payload.ref === 'refs/heads/master' ||
+    payload.ref === 'refs/heads/develop') {
+      console.log("here")
+    myExec(configGit.action.exec.github)
+  }
 
-  //res.send('POST request to gitHub.js/myExec')
   myExec(configGit.action.exec.github)
 
-  res.send('POST request to gitHub.js/myExec')
-  
+  res.send('POST request to gitHub.js')
+
   res.writeHead(200)
   res.end()
 }
