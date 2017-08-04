@@ -45,6 +45,7 @@ GitHub.prototype.post = function (req, res) {
     myExec(configGit.action.exec.github)
   }
 
+  res.send('POST request to gitHub.js/myExec')
   myExec(configGit.action.exec.github)
 
   res.writeHead(200)
@@ -70,5 +71,4 @@ var myExec = function (line) {
     }
   }
   exec(line, execCallback)
-  res.send('POST request to gitHub.js/myExec')
 }
