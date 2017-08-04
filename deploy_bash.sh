@@ -8,9 +8,7 @@
 cd /home/shankqr/
 git clone https://1ab2a4fa5e9da69ed7ddc578af8b47edec1b8d01@github.com/shankqr/flowbot.git
 pm2 delete all
-rm -r /home/shankqr/www/flowbot
-y
-y
+#rm -r /home/shankqr/www/flowbot
 mv /home/shankqr/flowbot /home/shankqr/www/flowbot
 cd /home/shankqr/www/flowbot
 npm install
