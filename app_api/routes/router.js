@@ -9,12 +9,11 @@ var gitConfig = require('../../config_git.js'); //Call in the GitHub Config
 var git = require('../controllers/gitHub');
 
 //GitHub Update - Listen for new updates
-router.post('/payload', git.create(gitConfig).post)
+//router.post('/payload', git.create(gitConfig).post)
 
-// GET method route
-//router.get('/', function (req, res) {
-//  res.send('GET request to the homepage')
-//})
+router.post('/payload', function (req, res) {
+  res.send('POST request to the homepage')
+})
 
 //Push the router to the app
 module.exports = router;
