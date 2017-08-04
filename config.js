@@ -1,7 +1,7 @@
 var cfg = {};
 
 // Port to operate the app
-cfg.port = process.env.PORT || 80;
+cfg.port = 3000;
 
 // Export configuration object
 module.exports = cfg;
