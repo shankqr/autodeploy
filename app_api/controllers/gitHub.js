@@ -30,23 +30,23 @@ GitHub.prototype.post = function (req, res) {
   }
 
   //Handle ipv4 issues
-  var ipv4 = req.ip.replace('::ffff:', '')
-  if (!(inAuthorizedSubnet(ipv4) || authorizedIps.indexOf(ipv4) >= 0 || githubIps.indexOf(ipv4) >= 0)) {
-    console.log('Unauthorized IP:', req.ip, '(', ipv4, ')')
-    res.writeHead(403)
-    res.end()
-    return
-  }
+  //var ipv4 = req.ip.replace('::ffff:', '')
+  //if (!(inAuthorizedSubnet(ipv4) || authorizedIps.indexOf(ipv4) >= 0 || githubIps.indexOf(ipv4) >= 0)) {
+  //  console.log('Unauthorized IP:', req.ip, '(', ipv4, ')')
+  //  res.writeHead(403)
+  //  res.end()
+  //  return
+  //}
 
-  if (payload.ref === configGit.repository.branch ||
-    payload.ref === 'refs/heads/master' ||
-    payload.ref === 'refs/heads/develop') {
-      console.log("here")
-    myExec(configGit.action.exec.github)
-  }
+  //if (payload.ref === configGit.repository.branch ||
+  //  payload.ref === 'refs/heads/master' ||
+  //  payload.ref === 'refs/heads/develop') {
+  //    console.log("here")
+  //  myExec(configGit.action.exec.github)
+  //}
 
   res.send('POST request to gitHub.js/myExec')
-  myExec(configGit.action.exec.github)
+  //myExec(configGit.action.exec.github)
 
   res.writeHead(200)
   res.end()
