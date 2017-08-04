@@ -20,6 +20,8 @@ GitHub.prototype.post = function (req, res) {
   var githubIps = configGit.security.githubIps
   var payload = req.body
 
+  res.send('POST request to the homepage')
+
   //If no payoad throw an error
   if (!payload) {
     //Although no one should see this
