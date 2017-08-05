@@ -5,7 +5,7 @@ sudo rm -r /home/shankqr/www/flowbot
 sudo mv /home/shankqr/flowbot /home/shankqr/www/flowbot
 cd /home/shankqr/www/flowbot
 npm install
-pm2 start index.js --name "flowbot"
+pm2 start pm2config.json
 
 
 
