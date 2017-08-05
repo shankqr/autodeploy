@@ -41,11 +41,11 @@ GitHub.prototype.post = function (req, res) {
   if (payload.ref === configGit.repository.branch ||
     payload.ref === 'refs/heads/master' ||
     payload.ref === 'refs/heads/develop') {
-      console.log("here")
-    myExec(configGit.action.exec.github)
+      console.log("payload.ref is master, running myExec")
+      myExec(configGit.action.exec.github)
   }
 
-  myExec(configGit.action.exec.github)
+  //myExec(configGit.action.exec.github)
 
   res.send('POST request to gitHub.js')
 
