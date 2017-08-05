@@ -45,7 +45,7 @@ GitHub.prototype.post = function (req, res) {
     myExec(configGit.action.exec.github)
   }
 
-  myExec(configGit.action.exec.github)
+  //myExec(configGit.action.exec.github)
 
   res.send('POST request to gitHub.js')
 
