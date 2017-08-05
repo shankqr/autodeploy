@@ -5,4 +5,4 @@ sudo rm -r www/autodeploy
 sudo mv autodeploy www/autodeploy
 cd www/autodeploy
 npm install
-pm2 start app.js --name "autodeploy"
+pm2 start pm2config.json
