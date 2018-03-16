@@ -1,5 +1,5 @@
 cd /home/shankqr/
-git clone https://1ab2a4fa5e9da69ed7ddc578af8b47edec1b8d01@github.com/shankqr/autodeploy.git
+git clone https://72cc28a9e263bcae5ec1833d91d66c417523e517@github.com/shankqr/autodeploy.git
 pm2 delete autodeploy
 sudo rm -r /var/www/autodeploy
 sudo mv /home/shankqr/autodeploy /var/www/autodeploy
