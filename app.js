@@ -16,7 +16,7 @@ app.use(morgan('dev'));
 
 // Start the server and listen out to requests
 app.listen(config.port);
-console.log('I will be watching: http://35.197.129.153:' + config.port);
+console.log('I will be watching on port: ' + config.port);
 
 // Bundle our routes for the app
 app.use('/app_api', require('./app_api/routes/router'));

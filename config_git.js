@@ -3,7 +3,8 @@ var Private = {
     authorizedIps: [
       '127.1.0.1',
       //Add you server ip here
-      '35.197.129.153'
+      '35.197.129.153',
+      '18.218.216.155'
     ],
     githubIps: [
       '207.97.227.253',
