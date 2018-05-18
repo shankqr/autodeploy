@@ -20,3 +20,7 @@ console.log('I will be watching on port: ' + config.port);
 
 // Bundle our routes for the app
 app.use('/app_api', require('./app_api/routes/router'));
+
+app.get('/', (req, res) => {
+  res.send('autodeploy is working');
+});
